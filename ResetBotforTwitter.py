@@ -7,6 +7,7 @@ Created on Tue Aug 18 12:51:52 2020
 """
 Important stuff to always run
 """
+pip install requests_oauthlib #run this only if requests_oathlib isn't already installed
 import requests
 import json
 import urllib.parse
