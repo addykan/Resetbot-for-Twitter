@@ -10,8 +10,10 @@ Important stuff to always run
 #pip install requests_oauthlib #run this only if requests_oathlib isn't already installed
 import requests
 import json
+import os
 import urllib.parse
 from requests_oauthlib import *
+os.chdir("D:\General\Github\API-info")
 from APIauthcodes import * #Private file that contains all auth codes for all apps
 twitterauth() #Function that loads in twitter-specific auth codes
 from APIauthcodes import * #Needs to be run a second time for some reason for the Twitter codes to actually be loaded into the system - not sure why
@@ -28,7 +30,7 @@ Authentication works, but error message is that id parameter is missing
 """
 #%%
 #Update tweetcontent object with content of tweet, then run the cell to push the tweet
-tweetinput = "Enter contents of tweet here"
+tweetinput = "Imagine using the actual Twitter app 🤮"
 tweetcontent = urllib.parse.quote(tweetinput)
 newtweeturl = f'https://api.twitter.com/1.1/statuses/update.json?status={tweetcontent}'
 newtweet = requests.post(newtweeturl, auth = auth)
