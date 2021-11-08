@@ -54,7 +54,7 @@ class TwitterBot(object):
     def deleteTweet(self, tweetID):
         deleteTweetFormattedUrl = self.deleteTweetUrl + str(tweetID) + '.json'
         deletedTweet = requests.post(deleteTweetFormattedUrl, auth = self.auth)
-        return deletedTweet.txt
+        return deletedTweet.text
     
     def makeTweetUrl(self, tweetId):
         tweetStatus = self.getTweetStatus(tweetId)
