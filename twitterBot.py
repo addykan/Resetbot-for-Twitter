@@ -2,7 +2,9 @@ import requests, json, os, urllib.parse
 from requests_oauthlib import *
 from dotenv import load_dotenv
 
-
+'''
+API Documentation at https://developer.twitter.com/en/docs/twitter-api
+'''
 class TwitterBot(object):
     def __init__(self):
         load_dotenv()
