@@ -65,7 +65,7 @@ class TwitterBot(object):
 
 
 twitterBot = TwitterBot()
-result = twitterBot.tweet("Tweet Content")
+result = twitterBot.tweet("Happy TP Season from 15-112!")
 print(result)
 loadedResult = json.loads(result)
 newTweetID = loadedResult['id']
